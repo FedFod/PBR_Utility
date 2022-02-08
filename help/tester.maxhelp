@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 176.0, 175.0, 1306.0, 743.0 ],
+		"rect" : [ 379.0, 189.0, 1117.0, 743.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,8 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 537.0, 446.0, 69.0, 22.0 ],
-					"text" : "jit.gl.handle"
+					"patching_rect" : [ 537.0, 446.0, 131.0, 22.0 ],
+					"text" : "jit.gl.handle @enable 0"
 				}
 
 			}
@@ -93,8 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 138.0, 650.0, 626.0, 22.0 ],
-					"text" : "jit_gl_texture D:/MyData/MyFiles/Assets/Textures/PBL/Cobblestone/cobblestone_floor_07_nor_4k.jpg1370"
+					"patching_rect" : [ 138.0, 650.0, 626.0, 22.0 ]
 				}
 
 			}
@@ -119,7 +118,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 706.0, 474.0, 518.0, 36.0 ],
+					"patching_rect" : [ 706.0, 474.0, 519.0, 36.0 ],
 					"text" : "jit.gl.gridshape @enable 1 @scale 0.4 @auto_material 0 @color 1 1 1 1 @mat_ambient 1 1 1 1 @enable 0"
 				}
 
@@ -152,7 +151,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 38.0, 103.0, 344.0, 365.0 ],
+					"patching_rect" : [ 44.0, 104.0, 446.0, 353.0 ],
 					"varname" : "pbl_bpatcher",
 					"viewvisibility" : 1
 				}
@@ -178,7 +177,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 537.0, 421.0, 150.0, 22.0 ]
+					"patching_rect" : [ 537.0, 405.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -260,29 +259,25 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "PBL_Material_Visualizer.js",
-				"bootpath" : "D:/MyData/Lavori/Cycling74/PBL_Utility",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/PBR_Utility/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TexturesLoader.js",
-				"bootpath" : "D:/MyData/Lavori/Cycling74/PBL_Utility",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/PBR_Utility/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pbl.material.visualizer.maxpat",
-				"bootpath" : "D:/MyData/Lavori/Cycling74/PBL_Utility",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/PBR_Utility/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pbl.textures.loader.maxpat",
-				"bootpath" : "D:/MyData/Lavori/Cycling74/PBL_Utility",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/PBR_Utility/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

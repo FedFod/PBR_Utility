@@ -73,7 +73,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 777.0, 699.0, 30.0, 30.0 ]
+					"patching_rect" : [ 788.0, 688.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -141,7 +141,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 128.0, 0.0, 359.0, 370.0 ],
+					"patching_rect" : [ 128.0, 0.0, 318.0, 353.0 ],
 					"sync" : 1,
 					"varname" : "pbl_vis_pworld"
 				}
@@ -208,13 +208,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 645.0, 663.0, 151.0, 22.0 ],
+					"patching_rect" : [ 645.0, 649.0, 162.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "PBL_Material_Visualizer",
+						"filename" : "PBL_Material_Visualizer.js",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js PBL_Material_Visualizer"
+					"text" : "js PBL_Material_Visualizer.js"
 				}
 
 			}
@@ -234,7 +234,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 128.0, 370.0 ],
+					"patching_rect" : [ 0.0, 0.0, 128.0, 353.0 ],
 					"varname" : "pbl_textures_loader",
 					"viewvisibility" : 1
 				}
