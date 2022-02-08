@@ -50,7 +50,8 @@ function Sprite(index, patcher, position, spriteSize, filename)
             gGlobal.textureNames.tex_bump = this.texture.name;
             this.textureType = "tex_bump";
         }
-        else if (this.filename.indexOf("disp") >= 0 || this.filename.indexOf("DISP") >= 0 || this.filename.indexOf("height") >= 0) 
+        else if (this.filename.indexOf("disp") >= 0 || this.filename.indexOf("DISP") >= 0 || this.filename.indexOf("height") >= 0 || 
+                 this.filename.indexOf("Height") >= 0) 
         {
             gGlobal.textureNames.tex_height = this.texture.name;
             this.textureType = "tex_height";

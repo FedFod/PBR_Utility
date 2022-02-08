@@ -81,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 38.0, 555.0, 80.0, 60.0 ],
+					"patching_rect" : [ 38.0, 579.0, 80.0, 60.0 ],
 					"sync" : 1
 				}
 
@@ -94,7 +94,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 101.0, 697.0, 626.0, 22.0 ],
-					"text" : "jit_gl_texture D:/MyData/MyFiles/Assets/Textures/PBL/Cobblestone/cobblestone_floor_07_spec_4k.jpg1077"
+					"text" : "jit_gl_texture D:/MyData/MyFiles/Assets/Textures/PBL/mahogfloor/mahogfloor_Height.png1095"
 				}
 
 			}
@@ -152,7 +152,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 38.0, 106.0, 505.0, 389.0 ],
+					"patching_rect" : [ 38.0, 106.0, 444.0, 424.0 ],
 					"varname" : "pbl_bpatcher",
 					"viewvisibility" : 1
 				}
