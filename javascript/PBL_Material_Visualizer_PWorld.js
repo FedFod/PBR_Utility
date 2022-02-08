@@ -31,7 +31,8 @@ function PWorld(patcher)
         tex_diffuse: this.textureEmpty.name,
         tex_normals: this.textureEmpty.name,
         tex_specular: this.textureEmpty.name,
-        tex_height: this.textureEmpty.name
+        tex_height: this.textureEmpty.name,
+        tex_roughness: this.textureEmpty.name
     };
 
     this.Reset = function()
@@ -58,10 +59,11 @@ function PWorld(patcher)
     }
 
     this.SetShapeTextures = function()
-    {
+    {   
+        this.SetMatToEmpty();
+    
         this.material.diffuse_texture(gGlobal.textureNames.tex_diffuse);
         this.material.specular_texture(gGlobal.textureNames.tex_specular);
-        print(gGlobal.textureNames.tex_specular)
         this.material.normals_texture(gGlobal.textureNames.tex_normals);
         this.material.heightmap_texture(gGlobal.textureNames.tex_height);
         // this.material.emission_texture(gGlobal.tex_emission);

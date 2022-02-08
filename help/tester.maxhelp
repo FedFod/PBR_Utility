@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 379.0, 189.0, 1117.0, 743.0 ],
+		"rect" : [ 379.0, 189.0, 1132.0, 743.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "Template_Grid",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"items" : "<empty>",
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 642.0, 176.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "newobj",
@@ -81,7 +94,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 38.0, 518.0, 80.0, 60.0 ],
+					"patching_rect" : [ 38.0, 555.0, 80.0, 60.0 ],
 					"sync" : 1
 				}
 
@@ -93,7 +106,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 138.0, 650.0, 626.0, 22.0 ]
+					"patching_rect" : [ 138.0, 650.0, 626.0, 22.0 ],
+					"text" : "jit_gl_texture D:/MyData/MyFiles/Assets/Textures/PBL/Cobblestone/cobblestone_floor_07_AO_4k.jpg1053"
 				}
 
 			}
@@ -151,7 +165,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 44.0, 104.0, 446.0, 353.0 ],
+					"patching_rect" : [ 38.0, 106.0, 462.0, 373.0 ],
 					"varname" : "pbl_bpatcher",
 					"viewvisibility" : 1
 				}
