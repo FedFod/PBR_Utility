@@ -19,7 +19,7 @@ function PWorld(patcher)
 
     // MATERIAL //
     this.material = new JitterObject("jit.gl.material");
-    this.material.mat_ambient = [0.4,0.4,0.4,1];
+    this.material.mat_ambient = [0.3,0.3,0.3,1];
     this.material.mat_diffuse = [1,1,1,1];
     this.material.mat_specular = [0.2,0.2,0.2,1];
 
