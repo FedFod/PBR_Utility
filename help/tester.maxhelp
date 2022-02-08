@@ -40,25 +40,12 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-1",
-					"items" : "<empty>",
-					"maxclass" : "umenu",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 642.0, 176.0, 100.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 537.0, 446.0, 131.0, 22.0 ],
+					"patching_rect" : [ 560.0, 629.0, 131.0, 22.0 ],
 					"text" : "jit.gl.handle @enable 0"
 				}
 
@@ -82,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 706.0, 347.0, 87.0, 22.0 ],
+					"patching_rect" : [ 729.0, 530.0, 87.0, 22.0 ],
 					"text" : "diffuse_texture"
 				}
 
@@ -106,8 +93,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 138.0, 650.0, 626.0, 22.0 ],
-					"text" : "jit_gl_texture D:/MyData/MyFiles/Assets/Textures/PBL/Cobblestone/cobblestone_floor_07_AO_4k.jpg1053"
+					"patching_rect" : [ 101.0, 697.0, 626.0, 22.0 ],
+					"text" : "jit_gl_texture D:/MyData/MyFiles/Assets/Textures/PBL/Cobblestone/cobblestone_floor_07_spec_4k.jpg1077"
 				}
 
 			}
@@ -119,7 +106,7 @@
 					"numinlets" : 8,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 706.0, 432.0, 351.0, 36.0 ],
+					"patching_rect" : [ 729.0, 615.0, 351.0, 36.0 ],
 					"text" : "jit.gl.material @mat_ambient 0.5 0.5 0.5 1 @mat_diffuse 0.8 0.8 0.8 1 @mat_specular 0.2 0.2 0.2 1"
 				}
 
@@ -132,7 +119,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 706.0, 474.0, 519.0, 36.0 ],
+					"patching_rect" : [ 729.0, 657.0, 519.0, 36.0 ],
 					"text" : "jit.gl.gridshape @enable 1 @scale 0.4 @auto_material 0 @color 1 1 1 1 @mat_ambient 1 1 1 1 @enable 0"
 				}
 
@@ -165,7 +152,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 38.0, 106.0, 462.0, 373.0 ],
+					"patching_rect" : [ 38.0, 106.0, 505.0, 389.0 ],
 					"varname" : "pbl_bpatcher",
 					"viewvisibility" : 1
 				}
@@ -179,7 +166,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 811.0, 351.0, 150.0, 22.0 ]
+					"patching_rect" : [ 834.0, 534.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -191,7 +178,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 537.0, 405.0, 150.0, 22.0 ]
+					"patching_rect" : [ 560.0, 588.0, 150.0, 22.0 ]
 				}
 
 			}

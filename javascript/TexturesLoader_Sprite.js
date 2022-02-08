@@ -8,7 +8,7 @@ function Sprite(index, patcher, position, spriteSize, filename)
     this.size = spriteSize.slice();
     this.borderSize = 2;
 
-    this.textureType = null;
+    this.textureType = "Not Found";
 
     this.menuYSize = 22;
 
@@ -33,47 +33,60 @@ function Sprite(index, patcher, position, spriteSize, filename)
     this.texture.name = filename.replace(/\s/g, '')+gGlobal.patchID;
     this.texture.jit_matrix(this.matrix.name);
 
-    if (this.filename.indexOf("diff") >= 0 || this.filename.indexOf("col") >= 0) 
+    this.ParseTextureType = function()
     {
-        gGlobal.textureNames.tex_diffuse = this.texture.name;
-        this.textureType = "ALBEDO";
+        if (this.filename.indexOf("diff") >= 0 || this.filename.indexOf("col") >= 0) 
+        {
+            gGlobal.textureNames.tex_diffuse = this.texture.name;
+            this.textureType = "tex_diffuse";
+        }
+        else if (this.filename.indexOf("AO") >= 0) 
+        {
+            gGlobal.textureNames.tex_ao = this.texture.name;
+            this.textureType = "tex_ao";
+        }
+        else if (this.filename.indexOf("bump") >= 0 || this.filename.indexOf("BUMP") >= 0) 
+        {
+            gGlobal.textureNames.tex_bump = this.texture.name;
+            this.textureType = "tex_bump";
+        }
+        else if (this.filename.indexOf("disp") >= 0 || this.filename.indexOf("DISP") >= 0 || this.filename.indexOf("height") >= 0) 
+        {
+            gGlobal.textureNames.tex_height = this.texture.name;
+            this.textureType = "tex_height";
+        }
+        else if (this.filename.indexOf("NOR") >= 0 || this.filename.indexOf("nor") >= 0) 
+        {
+            gGlobal.textureNames.tex_normals = this.texture.name;
+            this.textureType = "tex_normals";
+        }
+        else if (this.filename.indexOf("spec") >= 0 || this.filename.indexOf("SPEC") >= 0) 
+        {
+            gGlobal.textureNames.tex_specular = this.texture.name;
+            this.textureType = "tex_specular";
+        }
+        else if (this.filename.indexOf("rough") >= 0 || this.filename.indexOf("ROUGH") >= 0) 
+        {
+            gGlobal.textureNames.tex_rough = this.texture.name;
+            this.textureType = "tex_rough";
+        }
     }
-    else if (this.filename.indexOf("AO") >= 0) 
-    {
-        gGlobal.textureNames.tex_ao = this.texture.name;
-        this.textureType = "AO";
-    }
-    else if (this.filename.indexOf("bump") >= 0 || this.filename.indexOf("BUMP") >= 0) 
-    {
-        gGlobal.textureNames.tex_bump = this.texture.name;
-        this.textureType = "BUMP";
-    }
-    else if (this.filename.indexOf("disp") >= 0 || this.filename.indexOf("DISP") >= 0 || this.filename.indexOf("height") >= 0) 
-    {
-        gGlobal.textureNames.tex_height = this.texture.name;
-        this.textureType = "HEIGHT";
-    }
-    else if (this.filename.indexOf("NOR") >= 0 || this.filename.indexOf("nor") >= 0) 
-    {
-        gGlobal.textureNames.tex_normals = this.texture.name;
-        this.textureType = "NORMALS";
-    }
-    else if (this.filename.indexOf("spec") >= 0 || this.filename.indexOf("SPEC") >= 0) 
-    {
-        gGlobal.textureNames.tex_specular = this.texture.name;
-        this.textureType = "SPECULAR";
-    }
+
+    this.ParseTextureType();
     
     // UMENU //
     this.umenu = this.p.newdefault(this.position[0]+this.borderSize, this.position[1]+this.borderSize, "umenu");  
     this.umenu.varname = "pbl_umenu_"+index+"_"+gGlobal.patchID;
     this.p.script("bringtofront", this.umenu.varname); 
+    this.umenu.append("Not Found");
 
     var texTypes = Object.keys(gGlobal.textureNames);
     for (var key in texTypes)
     {
         this.umenu.append(texTypes[key]);
     }
+
+    this.umenu.set(this.textureType);
 
     // PANEL //
     this.borderPanel = this.p.newdefault(this.position[0], this.position[1], "panel");
@@ -100,7 +113,6 @@ function Sprite(index, patcher, position, spriteSize, filename)
         }).bind(this); 
 
     this.buttonListener = new MaxobjListener(this.button, ButtonCallback);
-
 
     this.Resize = function(position, size)
     {

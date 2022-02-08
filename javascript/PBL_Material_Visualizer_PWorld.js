@@ -32,7 +32,9 @@ function PWorld(patcher)
         tex_normals: this.textureEmpty.name,
         tex_specular: this.textureEmpty.name,
         tex_height: this.textureEmpty.name,
-        tex_roughness: this.textureEmpty.name
+        tex_rough: this.textureEmpty.name,
+        tex_ao: this.textureEmpty.name,
+        tex_bump: this.textureEmpty.name
     };
 
     this.Reset = function()
